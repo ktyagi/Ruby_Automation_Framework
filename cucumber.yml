@@ -1,4 +1,0 @@
-#default: --no-source --color BROWSER=firefox --format pretty  --format html --out results.html --format json --out reports.json
-#default: BROWSER=firefox --format pretty  --format html --out results.html
-#default: BROWSER=firefox #chrome   #cucumber
-default: DATA_YML_FILE=default.yml
