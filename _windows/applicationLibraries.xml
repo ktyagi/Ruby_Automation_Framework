@@ -64,6 +64,18 @@
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/cucumber-wire-0.0.1/features" />
       </SOURCES>
     </library>
+    <library name="data_magic (v1.0, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/data_magic-1.0/lib" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/data_magic-1.0/config" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/data_magic-1.0/features" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/data_magic-1.0/lib" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/data_magic-1.0/config" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/data_magic-1.0/features" />
+      </SOURCES>
+    </library>
     <library name="debase (v0.2.1, ruby-2.2.2-p95) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/debase-0.2.1/ext" />
@@ -104,6 +116,14 @@
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/diff-lcs-1.2.5/autotest" />
       </SOURCES>
     </library>
+    <library name="docile (v1.1.5, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/docile-1.1.5/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/docile-1.1.5/lib" />
+      </SOURCES>
+    </library>
     <library name="event-bus (v0.1.0, ruby-2.2.2-p95) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/event-bus-0.1.0/lib" />
@@ -114,6 +134,14 @@
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/event-bus-0.1.0/lib" />
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/event-bus-0.1.0/script" />
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/event-bus-0.1.0/fixtures" />
+      </SOURCES>
+    </library>
+    <library name="faker (v1.6.6, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/faker-1.6.6/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/faker-1.6.6/lib" />
       </SOURCES>
     </library>
     <library name="ffi (v1.9.14, ruby-2.2.2-p95) [gem]">
@@ -132,6 +160,16 @@
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/ffi-1.9.14-x86-mingw32/libtest" />
       </SOURCES>
     </library>
+    <library name="gherkin (v4.0.0, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/gherkin-4.0.0/bin" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/gherkin-4.0.0/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/gherkin-4.0.0/bin" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/gherkin-4.0.0/lib" />
+      </SOURCES>
+    </library>
     <library name="gherkin3 (v3.1.2, ruby-2.2.2-p95) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/gherkin3-3.1.2/bin" />
@@ -140,6 +178,16 @@
       <SOURCES>
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/gherkin3-3.1.2/bin" />
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/gherkin3-3.1.2/lib" />
+      </SOURCES>
+    </library>
+    <library name="i18n (v0.7.0, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/i18n-0.7.0/lib" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/i18n-0.7.0/gemfiles" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/i18n-0.7.0/lib" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/i18n-0.7.0/gemfiles" />
       </SOURCES>
     </library>
     <library name="io-console (v0.4.3, ruby-2.2.2-p95) [gem]">
@@ -210,12 +258,50 @@
         <root url="file://C:/Ruby22/lib/ruby/2.2.0/unicode_normalize" />
       </SOURCES>
     </library>
+    <library name="json (v1.8.3, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/rubystubs/rubystubs22/json/1.8.3" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/ext" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/lib" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/data" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/java" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/tests" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/tools" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/diagrams" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/rubystubs/rubystubs22/json/1.8.3" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/ext" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/lib" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/data" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/java" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/tests" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/tools" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/json-1.8.3/diagrams" />
+      </SOURCES>
+    </library>
+    <library name="mini_portile2 (v2.1.0, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/mini_portile2-2.1.0/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/mini_portile2-2.1.0/lib" />
+      </SOURCES>
+    </library>
     <library name="minitest (v5.4.3, ruby-2.2.2-p95) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/minitest-5.4.3/lib" />
       </CLASSES>
       <SOURCES>
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/minitest-5.4.3/lib" />
+      </SOURCES>
+    </library>
+    <library name="minitest (v5.9.0, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/minitest-5.9.0/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/minitest-5.9.0/lib" />
       </SOURCES>
     </library>
     <library name="multi_json (v1.12.1, ruby-2.2.2-p95) [gem]">
@@ -234,12 +320,56 @@
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/multi_test-0.1.2/lib" />
       </SOURCES>
     </library>
+    <library name="net-http-persistent (v2.9.4, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/net-http-persistent-2.9.4/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/net-http-persistent-2.9.4/lib" />
+      </SOURCES>
+    </library>
+    <library name="page-object (v1.2.2, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/page-object-1.2.2/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/page-object-1.2.2/lib" />
+      </SOURCES>
+    </library>
+    <library name="page_navigation (v0.10, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/page_navigation-0.10/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/page_navigation-0.10/lib" />
+      </SOURCES>
+    </library>
+    <library name="pkg-config (v1.1.7, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/pkg-config-1.1.7/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/pkg-config-1.1.7/lib" />
+      </SOURCES>
+    </library>
     <library name="power_assert (v0.2.2, ruby-2.2.2-p95) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/power_assert-0.2.2/lib" />
       </CLASSES>
       <SOURCES>
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/power_assert-0.2.2/lib" />
+      </SOURCES>
+    </library>
+    <library name="rake (v11.2.2, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/rake-11.2.2/bin" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/rake-11.2.2/exe" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/rake-11.2.2/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/rake-11.2.2/bin" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/rake-11.2.2/exe" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/rake-11.2.2/lib" />
       </SOURCES>
     </library>
     <library name="require_all (v1.3.3, ruby-2.2.2-p95) [gem]">
@@ -326,6 +456,20 @@
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/selenium-webdriver-2.53.4/lib" />
       </SOURCES>
     </library>
+    <library name="simplecov-html (v0.10.0, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/simplecov-html-0.10.0/lib" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/simplecov-html-0.10.0/views" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/simplecov-html-0.10.0/assets" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/simplecov-html-0.10.0/public" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/simplecov-html-0.10.0/lib" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/simplecov-html-0.10.0/views" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/simplecov-html-0.10.0/assets" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/simplecov-html-0.10.0/public" />
+      </SOURCES>
+    </library>
     <library name="test-unit (v3.0.8, ruby-2.2.2-p95) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/test-unit-3.0.8/lib" />
@@ -334,6 +478,20 @@
       <SOURCES>
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/test-unit-3.0.8/lib" />
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/test-unit-3.0.8/sample" />
+      </SOURCES>
+    </library>
+    <library name="thread_safe (v0.3.5, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/thread_safe-0.3.5/ext" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/thread_safe-0.3.5/lib" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/thread_safe-0.3.5/tasks" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/thread_safe-0.3.5/yard-template" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/thread_safe-0.3.5/ext" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/thread_safe-0.3.5/lib" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/thread_safe-0.3.5/tasks" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/thread_safe-0.3.5/yard-template" />
       </SOURCES>
     </library>
     <library name="watir-webdriver (v0.9.3, ruby-2.2.2-p95) [gem]">
@@ -352,6 +510,14 @@
       </CLASSES>
       <SOURCES>
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/websocket-1.2.3/lib" />
+      </SOURCES>
+    </library>
+    <library name="yml_reader (v0.7, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/yml_reader-0.7/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/yml_reader-0.7/lib" />
       </SOURCES>
     </library>
   </component>
