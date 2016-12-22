@@ -754,6 +754,16 @@
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/watir-6.0.2/support" />
       </SOURCES>
     </library>
+    <library name="watir (v6.0.3, ruby-2.2.2-p95) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/watir-6.0.3/lib" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/watir-6.0.3/support" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/watir-6.0.3/lib" />
+        <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/watir-6.0.3/support" />
+      </SOURCES>
+    </library>
     <library name="watir-webdriver (v0.9.3, ruby-2.2.2-p95) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby22/lib/ruby/gems/2.2.0/gems/watir-webdriver-0.9.3/lib" />
