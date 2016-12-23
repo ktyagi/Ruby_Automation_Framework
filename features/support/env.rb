@@ -1,22 +1,17 @@
-require 'watir-webdriver'
-# require 'rspec'
-# require 'require_all'
-# require 'saucelabs'
-# require 'nokogiri'
+# require 'watir'
 require 'require_all'
-# require './features/support/modules/business_modules'
+require 'page-object'
+
 
 OR = YAML.load_file './lib/config/object_repository.yml'
-
 require './lib/page_helper'
 require './lib/data_helper'
 
 require_all './lib/pages'
 
-World DataHelper
+#World DataHelper
 # World Keywords
-World PageHelper
-
+#World PageHelper
 
 
 
