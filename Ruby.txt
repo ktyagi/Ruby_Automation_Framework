@@ -1,0 +1,18 @@
+First Install Bundler
+
+
+C:\Users\Kuldeep.Kumar>gem install bundler
+Successfully installed bundler-1.13.6
+Parsing documentation for bundler-1.13.6
+Installing ri documentation for bundler-1.13.6
+Done installing documentation for bundler after 17 seconds
+1 gem installed
+
+C:\Users\Kuldeep.Kumar>
+
+
+Now run 
+
+D:\Wits_Automation_Framework>bundle install
+
+to install all gems specified in gem file
