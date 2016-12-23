@@ -1,5 +1,5 @@
 Feature: Login and Logout
-  @Login
+ # @Login
   Scenario: Login
     When User open WITS website
     And User login with username "kuldeep1@mailinator.com" and password "Abcde@123"
