@@ -4,3 +4,4 @@ Gemfile.lock
 browsers/geckodriver-v0.11.1-win32.zip
 browsers/geckodriver.exe
 screenshots/
+.idea/
