@@ -1,0 +1,115 @@
+Git - deleted some files locally, how do I get them from a remote repository
+
+Since git is a distributed VCS, your local repository contains all of the information. No downloading is necessary; you just need to extract the content you want from the repo at your fingertips.
+
+If you haven't committed the deletion, just check out the files from your current commit:
+
+git checkout HEAD <path>
+If you have committed the deletion, you need to check out the files from a commit that has them. Presumably it would be the previous commit:
+
+git checkout HEAD^ <path>
+but if it's n commits ago, use HEAD~n, or simply fire up gitk, find the SHA1 of the appropriate commit, and paste it in.
+
+If you have deleted multiple files locally but not committed, you can force checkout
+$ git checkout -f HEAD
+
+===================================================================================
+Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
+$ ls
+Data.csv  Data1.csv  WITS_Jmeter.jmx
+
+Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
+$ git add Data.csv WITS_Jmeter.jmx
+warning: LF will be replaced by CRLF in test/performance/WITS_Jmeter.jmx.
+The file will have its original line endings in your working directory.
+
+Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
+$ git pull
+Enter passphrase for key '/c/Users/Kuldeep.Kumar/.ssh/id_rsa':
+remote: Counting objects: 188, done.
+remote: Compressing objects: 100% (177/177), done.
+remote: Total 188 (delta 86), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (188/188), 71.75 KiB | 64.00 KiB/s, done.
+Resolving deltas: 100% (86/86), done.
+From github.com:NZX/pep-raillery
+   098326d..8d63369  develop    -> origin/develop
+ * [new branch]      feature/improving-no-data-handling -> origin/feature/improving-no-data-handling
+   5e26c65..ba709b8  feature/spa-cons -> origin/feature/spa-cons
+ * [new branch]      fix/queries-dashboard-to-ords -> origin/fix/queries-dashboard-to-ords
+Updating 098326d..8d63369
+error: Your local changes to the following files would be overwritten by merge:
+        Gemfile
+Please commit your changes or stash them before you can merge.
+Aborting
+
+$ git diff ../../Gemfile
+diff --git a/Gemfile b/Gemfile
+index 90feaa8..3e4d957 100644
+--- a/Gemfile
++++ b/Gemfile
+@@ -1,5 +1,5 @@
+ source 'https://rubygems.org'
+-ruby '2.3.0'
++ruby '2.3.1'
+
+ # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+ gem 'rails', '~> 4.2'
+
+Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
+$ git checkout -- ../../Gemfile
+Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
+$ git pull
+Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
+$ git status
+warning: LF will be replaced by CRLF in test/performance/WITS_Jmeter.jmx.
+The file will have its original line endings in your working directory.
+On branch develop
+Your branch is up-to-date with 'origin/develop'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Data.csv
+        modified:   WITS_Jmeter.jmx
+
+Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
+$ git commit -m "Updating performance test script"
+[develop warning: LF will be replaced by CRLF in test/performance/WITS_Jmeter.jmx.
+The file will have its original line endings in your working directory.
+0d343cd] Updating performance test script
+warning: LF will be replaced by CRLF in test/performance/WITS_Jmeter.jmx.
+The file will have its original line endings in your working directory.
+ 2 files changed, 9012 insertions(+), 12 deletions(-)
+ create mode 100644 test/performance/Data.csv
+
+Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
+$ git push origin develop
+Enter passphrase for key '/c/Users/Kuldeep.Kumar/.ssh/id_rsa':
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 20.19 KiB | 0 bytes/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To git@github.com:NZX/pep-raillery.git
+   8d63369..0d343cd  develop -> develop
+
+Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
+$ ls
+Data.csv  Data1.csv  WITS_Jmeter.jmx
+====================================================================================
+# show differences between index and working tree
+# that is, changes you haven't staged to commit
+git diff [filename]
+# show differences between current commit and index
+# that is, what you're about to commit
+git diff --cached [filename]
+# show differences between current commit and working tree
+git diff HEAD [filename]
+
+
+====================================================================================
+$ git push origin :branch-name
+where you have to substitute origin with the name of the remote repository and branch-name with the name of the branch you want to delete at github.
+
+Edit: Note the colon in front of the branch name, it is important.
+http://stackoverflow.com/questions/10317304/how-do-i-delete-a-branch-from-github
