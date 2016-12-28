@@ -22,6 +22,10 @@
           <option name="url" value="https://github.com/cheezy/CodeMash2012.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/cheezy/test_puppies.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="D:\" />
