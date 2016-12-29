@@ -192,6 +192,26 @@
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ffi-1.9.14-x64-mingw32/libtest" />
       </SOURCES>
     </library>
+    <library name="gherkin (v2.12.2, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/rubystubs/rubystubs23/gherkin/2.12.2" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/js" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/ragel" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/tasks" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/features" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/rubystubs/rubystubs23/gherkin/2.12.2" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/js" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/ragel" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/tasks" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/features" />
+      </SOURCES>
+    </library>
     <library name="i18n (v0.7.0, ruby-2.3.3-p222) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/i18n-0.7.0/lib" />
