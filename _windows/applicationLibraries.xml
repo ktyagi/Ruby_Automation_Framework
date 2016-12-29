@@ -102,6 +102,34 @@
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/data_magic-1.0/features" />
       </SOURCES>
     </library>
+    <library name="debase (v0.2.1, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/debase-0.2.1/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/debase-0.2.1/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/debase-0.2.1/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/debase-0.2.1/lib" />
+      </SOURCES>
+    </library>
+    <library name="debase (v0.2.2.beta8, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/debase-0.2.2.beta8/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/debase-0.2.2.beta8/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/debase-0.2.2.beta8/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/debase-0.2.2.beta8/lib" />
+      </SOURCES>
+    </library>
+    <library name="debase-ruby_core_source (v0.9.6, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/debase-ruby_core_source-0.9.6/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/debase-ruby_core_source-0.9.6/lib" />
+      </SOURCES>
+    </library>
     <library name="did_you_mean (v1.0.0, ruby-2.3.3-p222) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/did_you_mean-1.0.0/lib" />
@@ -164,6 +192,26 @@
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ffi-1.9.14-x64-mingw32/gen" />
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ffi-1.9.14-x64-mingw32/lib" />
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ffi-1.9.14-x64-mingw32/libtest" />
+      </SOURCES>
+    </library>
+    <library name="gherkin (v2.12.2, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/rubystubs/rubystubs23/gherkin/2.12.2" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/js" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/ragel" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/tasks" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/features" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/rubystubs/rubystubs23/gherkin/2.12.2" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/js" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/ragel" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/tasks" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-2.12.2/features" />
       </SOURCES>
     </library>
     <library name="i18n (v0.7.0, ruby-2.3.3-p222) [gem]">
@@ -366,6 +414,20 @@
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/pretty_face-0.10.3/fixtures" />
       </SOURCES>
     </library>
+    <library name="rack (v2.0.1, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/bin" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/contrib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/example" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/bin" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/contrib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/example" />
+      </SOURCES>
+    </library>
     <library name="rack-test (v0.6.3, ruby-2.3.3-p222) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-test-0.6.3/lib" />
@@ -408,6 +470,18 @@
       </CLASSES>
       <SOURCES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/require_all-1.3.3/lib" />
+      </SOURCES>
+    </library>
+    <library name="ruby-debug-ide (v0.6.1.beta2, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ruby-debug-ide-0.6.1.beta2/bin" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ruby-debug-ide-0.6.1.beta2/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ruby-debug-ide-0.6.1.beta2/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ruby-debug-ide-0.6.1.beta2/bin" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ruby-debug-ide-0.6.1.beta2/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ruby-debug-ide-0.6.1.beta2/lib" />
       </SOURCES>
     </library>
     <library name="rubyzip (v1.2.0, ruby-2.3.3-p222) [gem]">
