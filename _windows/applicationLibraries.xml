@@ -64,22 +64,6 @@
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/concurrent-ruby-1.0.4/lib" />
       </SOURCES>
     </library>
-    <library name="cucumber (v2.4.0, ruby-2.3.3-p222) [gem]">
-      <CLASSES>
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/cucumber-2.4.0/bin" />
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/cucumber-2.4.0/lib" />
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/cucumber-2.4.0/.github" />
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/cucumber-2.4.0/features" />
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/cucumber-2.4.0/gem_tasks" />
-      </CLASSES>
-      <SOURCES>
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/cucumber-2.4.0/bin" />
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/cucumber-2.4.0/lib" />
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/cucumber-2.4.0/.github" />
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/cucumber-2.4.0/features" />
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/cucumber-2.4.0/gem_tasks" />
-      </SOURCES>
-    </library>
     <library name="cucumber-core (v1.5.0, ruby-2.3.3-p222) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/cucumber-core-1.5.0/lib" />
@@ -180,16 +164,6 @@
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ffi-1.9.14-x64-mingw32/gen" />
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ffi-1.9.14-x64-mingw32/lib" />
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/ffi-1.9.14-x64-mingw32/libtest" />
-      </SOURCES>
-    </library>
-    <library name="gherkin (v4.0.0, ruby-2.3.3-p222) [gem]">
-      <CLASSES>
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-4.0.0/bin" />
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-4.0.0/lib" />
-      </CLASSES>
-      <SOURCES>
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-4.0.0/bin" />
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/gherkin-4.0.0/lib" />
       </SOURCES>
     </library>
     <library name="i18n (v0.7.0, ruby-2.3.3-p222) [gem]">
