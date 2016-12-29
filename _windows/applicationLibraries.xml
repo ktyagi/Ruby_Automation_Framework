@@ -1,5 +1,29 @@
 <application>
   <component name="libraryTable">
+    <library name="actionpack (v5.0.1, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionpack-5.0.1/lib" />
+      </SOURCES>
+    </library>
+    <library name="actionview (v5.0.1, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionview-5.0.1/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/actionview-5.0.1/lib" />
+      </SOURCES>
+    </library>
+    <library name="activesupport (v5.0.1, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/activesupport-5.0.1/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/activesupport-5.0.1/lib" />
+      </SOURCES>
+    </library>
     <library name="builder (v3.2.2, ruby-2.3.3-p222) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/builder-3.2.2/lib" />
@@ -30,6 +54,14 @@
       </CLASSES>
       <SOURCES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/childprocess-0.5.9/lib" />
+      </SOURCES>
+    </library>
+    <library name="concurrent-ruby (v1.0.4, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/concurrent-ruby-1.0.4/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/concurrent-ruby-1.0.4/lib" />
       </SOURCES>
     </library>
     <library name="cucumber (v2.4.0, ruby-2.3.3-p222) [gem]">
@@ -102,12 +134,36 @@
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/diff-lcs-1.2.5/autotest" />
       </SOURCES>
     </library>
+    <library name="erubis (v2.7.0, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/erubis-2.7.0/bin" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/erubis-2.7.0/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/erubis-2.7.0/contrib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/erubis-2.7.0/doc-api" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/erubis-2.7.0/benchmark" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/erubis-2.7.0/bin" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/erubis-2.7.0/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/erubis-2.7.0/contrib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/erubis-2.7.0/doc-api" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/erubis-2.7.0/benchmark" />
+      </SOURCES>
+    </library>
     <library name="faker (v1.6.6, ruby-2.3.3-p222) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/faker-1.6.6/lib" />
       </CLASSES>
       <SOURCES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/faker-1.6.6/lib" />
+      </SOURCES>
+    </library>
+    <library name="faker (v1.7.1, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/faker-1.7.1/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/faker-1.7.1/lib" />
       </SOURCES>
     </library>
     <library name="ffi (v1.9.14, ruby-2.3.3-p222) [gem]">
@@ -212,6 +268,32 @@
         <root url="file://C:/Ruby23-x64/lib/ruby/2.3.0/unicode_normalize" />
       </SOURCES>
     </library>
+    <library name="loofah (v2.0.3, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/loofah-2.0.3/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/loofah-2.0.3/benchmark" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/loofah-2.0.3/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/loofah-2.0.3/benchmark" />
+      </SOURCES>
+    </library>
+    <library name="mini_portile2 (v2.1.0, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/mini_portile2-2.1.0/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/mini_portile2-2.1.0/lib" />
+      </SOURCES>
+    </library>
+    <library name="minitest (v5.10.1, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/minitest-5.10.1/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/minitest-5.10.1/lib" />
+      </SOURCES>
+    </library>
     <library name="minitest (v5.8.5, ruby-2.3.3-p222) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/minitest-5.8.5/lib" />
@@ -254,6 +336,26 @@
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/net-telnet-0.1.1/lib" />
       </SOURCES>
     </library>
+    <library name="nokogiri (v1.7.0, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/rubystubs/rubystubs23/nokogiri/1.7.0" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/nokogiri-1.7.0-x64-mingw32/bin" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/nokogiri-1.7.0-x64-mingw32/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/nokogiri-1.7.0-x64-mingw32/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/nokogiri-1.7.0-x64-mingw32/tasks" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/nokogiri-1.7.0-x64-mingw32/patches" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/nokogiri-1.7.0-x64-mingw32/suppressions" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/rubystubs/rubystubs23/nokogiri/1.7.0" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/nokogiri-1.7.0-x64-mingw32/bin" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/nokogiri-1.7.0-x64-mingw32/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/nokogiri-1.7.0-x64-mingw32/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/nokogiri-1.7.0-x64-mingw32/tasks" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/nokogiri-1.7.0-x64-mingw32/patches" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/nokogiri-1.7.0-x64-mingw32/suppressions" />
+      </SOURCES>
+    </library>
     <library name="page-object (v2.0.0, ruby-2.3.3-p222) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/page-object-2.0.0/lib" />
@@ -276,6 +378,56 @@
       </CLASSES>
       <SOURCES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/power_assert-0.2.6/lib" />
+      </SOURCES>
+    </library>
+    <library name="pretty_face (v0.10.3, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/pretty_face-0.10.3/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/pretty_face-0.10.3/features" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/pretty_face-0.10.3/fixtures" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/pretty_face-0.10.3/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/pretty_face-0.10.3/features" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/pretty_face-0.10.3/fixtures" />
+      </SOURCES>
+    </library>
+    <library name="rack (v2.0.1, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/bin" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/contrib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/example" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/bin" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/contrib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-2.0.1/example" />
+      </SOURCES>
+    </library>
+    <library name="rack-test (v0.6.3, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-test-0.6.3/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rack-test-0.6.3/lib" />
+      </SOURCES>
+    </library>
+    <library name="rails-dom-testing (v2.0.2, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rails-dom-testing-2.0.2/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rails-dom-testing-2.0.2/lib" />
+      </SOURCES>
+    </library>
+    <library name="rails-html-sanitizer (v1.0.3, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rails-html-sanitizer-1.0.3/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/rails-html-sanitizer-1.0.3/lib" />
       </SOURCES>
     </library>
     <library name="rake (v10.4.2, ruby-2.3.3-p222) [gem]">
@@ -316,6 +468,22 @@
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/selenium-webdriver-3.0.4/lib" />
       </SOURCES>
     </library>
+    <library name="selenium-webdriver (v3.0.5, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/selenium-webdriver-3.0.5/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/selenium-webdriver-3.0.5/lib" />
+      </SOURCES>
+    </library>
+    <library name="syntax (v1.2.1, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/syntax-1.2.1/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/syntax-1.2.1/lib" />
+      </SOURCES>
+    </library>
     <library name="test-unit (v3.1.5, ruby-2.3.3-p222) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/test-unit-3.1.5/lib" />
@@ -324,6 +492,28 @@
       <SOURCES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/test-unit-3.1.5/lib" />
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/test-unit-3.1.5/sample" />
+      </SOURCES>
+    </library>
+    <library name="thread_safe (v0.3.5, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/tasks" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/yard-template" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/ext" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/lib" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/tasks" />
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/thread_safe-0.3.5/yard-template" />
+      </SOURCES>
+    </library>
+    <library name="tzinfo (v1.2.2, ruby-2.3.3-p222) [gem]">
+      <CLASSES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib" />
+      </CLASSES>
+      <SOURCES>
+        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib" />
       </SOURCES>
     </library>
     <library name="watir (v6.0.3, ruby-2.3.3-p222) [gem]">
