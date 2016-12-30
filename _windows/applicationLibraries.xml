@@ -542,14 +542,6 @@
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/tzinfo-1.2.2/lib" />
       </SOURCES>
     </library>
-    <library name="watir (v5.0.0, ruby-2.3.3-p222) [gem]">
-      <CLASSES>
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/watir-5.0.0/lib" />
-      </CLASSES>
-      <SOURCES>
-        <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/watir-5.0.0/lib" />
-      </SOURCES>
-    </library>
     <library name="watir (v6.0.3, ruby-2.3.3-p222) [gem]">
       <CLASSES>
         <root url="file://C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/watir-6.0.3/lib" />
