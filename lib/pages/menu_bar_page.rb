@@ -1,5 +1,8 @@
 class MenuBar
-  # puts "in menu"
+ include PageObject
+  div(:menu_slider, :xpath => OR['menu_slider'])
+  link(:menu_logout, :xpath => OR['menu_logout'])
+  link(:menu_infeasibility, :xpath => OR['menu_infeasibility'])
   # element(:menu_collapsed) {|b1| b1.element(xpath: OR['menu_collapsed'])}
   # element(:menu_login) {|b1| b1.link(xpath: OR['menu_login'])}
   # element(:menu_slider) {|b1| b1.element(xpath: OR['menu_slider'])}

@@ -1,31 +1,35 @@
-Before do
-  # Specify the driver path . This solution not working
-  # chromedriver_path = File.join(File.absolute_path('../..', File.dirname(__FILE__)),"browsers","chromedriver.exe")
-  # Selenium::WebDriver::Chrome.driver_path = chromedriver_path
-
-  # Determine the directory containing browsers exe
- driver_directory = File.join(File.absolute_path('../..', File.dirname(__FILE__)),"browsers")
-
-  # Add that directory to the path
-  ENV['PATH'] = "#{ENV['PATH']}#{File::PATH_SEPARATOR}#{driver_directory}"
-  # puts ENV['PATH']
-
-  # driverpath = File.join(File.absolute_path('../..', File.dirname(__FILE__)),"browsers","chromedriver.exe")
-  # driverpath = File.join(File.absolute_path('../..', File.dirname(__FILE__)),"browsers","geckodriver.exe")
-  # puts driverpath
-  # Add that directory to the path
-  # ENV['PATH'] = "#{ENV['PATH']}#{File::PATH_SEPARATOR}#{chromedriver_directory}"
-   # Selenium::WebDriver::Chrome.path =driverpath
-  # Selenium::WebDriver::Chrome::Binary.path  = driverpath
-  #  @browser = Watir::Browser.new :Firefox           #Watir
-
-  # @browser = Watir::Browser.new :chrome # Default is firefox
-  @browser = Watir::Browser.new   # Default is firefox
-  # # @browser = Watir::Browser.new :firefox # Default is firefox
-
-  # caps = Selenium::WebDriver::Remote::Capabilities.firefox(marionette: false)
-  # Selenium::WebDriver::Firefox::Binary.path = driverpath
-  # Watir::Browser.new desired_capabilities: caps
+Before('@Login') do
+    puts "ENV['BROWSER'] #{ENV['BROWSER']}"
+    ENV['BROWSER'] = "chrome" if ENV['BROWSER'].nil?
+    if(ENV['BROWSER']=='chrome')
+   ##Chrome
+   driverpathC = File.join(File.absolute_path('../..', File.dirname(__FILE__)),"browsers","chromedriver.exe")
+   ##------------------------------------------------------------------
+    @browser = Selenium::WebDriver.for :chrome , driver_path: driverpathC
+   ##Watir
+    # Selenium::WebDriver.for :chrome , driver_path: driverpathC
+    # @browser = Watir::Browser.new :chrome
+   #------------------------------------------------------------------
+    elsif(ENV['BROWSER']=='firefox')
+   ##FireFox
+   driverpathF = File.join(File.absolute_path('../..', File.dirname(__FILE__)),"browsers","geckodriver.exe")
+  ##------------------------------------------------------------------
+   Selenium::WebDriver::Firefox::Binary.path="C:/Users/Kuldeep.Kumar/AppData/Local/Mozilla Firefox/firefox.exe"
+   @browser=Selenium::WebDriver.for :firefox, driver_path: driverpathF
+   # ##WAtir
+   # Selenium::WebDriver.for :firefox, driver_path: driverpathF
+   # @browser = Watir::Browser.new :firefox
+   ##--------------------------------------------------
+    elsif(ENV['BROWSER']=='ie')
+   ##IE
+   driverpathI = File.join(File.absolute_path('../..', File.dirname(__FILE__)),"browsers","IEDriverServer.exe")
+   ##------------------------------------------------------------------
+   @browser = Selenium::WebDriver.for :ie, driver_path: driverpathI
+   ##Watir
+   # Selenium::WebDriver.for :chrome , driver_path: driverpathI
+   # @browser = Watir::Browser.new :chrome
+   #------------------------------------------------------------------
+    end
 end
   # puts scenario.feature.name
   # puts scenario.scenario_outline.feature.name
@@ -71,8 +75,10 @@ end
 #
 # end
 
-
-
+  After('@Logout') do
+      # @browser.cookies.clear
+      @browser.quit
+  end
 # After('@Logout') do |scenario|
 #   if scenario.failed?
 #     Dir::mkdir('screenshots') if not File.directory?('screenshots')

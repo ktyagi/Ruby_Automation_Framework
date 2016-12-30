@@ -1,7 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gitignore
 Gemfile.lock
-screenshots/
 .idea/
-.xml
+index.html
+images/
+stylesheets/
+support/
 

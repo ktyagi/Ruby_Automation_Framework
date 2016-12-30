@@ -1,7 +1,7 @@
 First Install Bundler
 
 
-C:\Users\Kuldeep.Kumar>gem install bundler
+C:\Users\Kuldeep.K
 Successfully installed bundler-1.13.6
 Parsing documentation for bundler-1.13.6
 Installing ri documentation for bundler-1.13.6
@@ -16,3 +16,80 @@ Now run
 D:\Wits_Automation_Framework>bundle install
 
 to install all gems specified in gem file
+
+Can run
+
+
+D:\WIts_Automation_Framework>bundle update
+
+to get the latest version of gems specified in gem file
+
+
+D:\WIts_Automation_Framework>gem uninstall cucumber
+
+You have requested to uninstall the gem:
+        cucumber-2.0.0
+
+data_magic-1.0 depends on cucumber (>= 1.2.0, development)
+gherkin-2.12.2 depends on cucumber (>= 1.3.8, development)
+page-object-2.0.0 depends on cucumber (>= 2.0.0, development)
+pretty_face-0.10.3 depends on cucumber (>= 0, development)
+pretty_face-0.10.3 depends on cucumber (>= 0)
+If you remove this gem, these dependencies will not be met.
+Continue with Uninstall? [yN]  y
+Remove executables:
+        cucumber
+
+in addition to the gem? [Yn]  y
+Removing cucumber
+Successfully uninstalled cucumber-2.0.0
+
+D:\WIts_Automation_Framework>bundle install
+
+
+
+rubyinstaller-2.3.3-x64
+
+Move to devkit folder
+
+c:\DevKit-mingw64-64-4.7.2-20130224-1432-sfx>ruby dk.rb init
+[INFO] found RubyInstaller v2.3.3 at C:/Ruby23-x64
+
+Initialization complete! Please review and modify the auto-generated
+'config.yml' file to ensure it contains the root directories to all
+of the installed Rubies you want enhanced by the DevKit.
+
+c:\DevKit-mingw64-64-4.7.2-20130224-1432-sfx>ruby dk.rb install
+[INFO] Updating convenience notice gem override for 'C:/Ruby23-x64'
+[INFO] Installing 'C:/Ruby23-x64/lib/ruby/site_ruby/devkit.rb'
+
+c:\DevKit-mingw64-64-4.7.2-20130224-1432-sfx>
+
+
+------------------------------------------------------------------------
+#Browser
+https://chromedriver.storage.googleapis.com/index.html?path=2.27/
+
+Latest Release: ChromeDriver 2.27  
+
+chromedriver_win32.zip
+
+Supports Chrome v54-56
+
+Chrome Version 55.0.2883.87 m
+
+https://github.com/mozilla/geckodriver/releases
+
+Latest release v0.11.1
+
+geckodriver-v0.11.1-win64
+
+Firefox Version 49.0.2
+
+http://selenium-release.storage.googleapis.com/index.html?path=3.0/
+
+Release 3.0
+
+IEDriverServer_Win32_3.0.0.zip
+
+IE Version=11.0.9600.18537

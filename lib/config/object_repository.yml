@@ -1,14 +1,19 @@
 #DashBoard Screen
 
+dashboard_autoplay_xpath: //a[@href='#']
 dashboard_autoplay_css: .fa.fa-pause
+
 dashboard_login: //span[normalize-space(text())="Login"]/parent::a[@tabindex=0]
 dashboard_signup:  //a[@href='/public_users/sign_up' and @class='button']
 #Login Screen
 login_username_id: public_user_email
+login_username: //input[@id='public_user_email']
 login_password_id: public_user_password
 login_login_value: Log in
 login_login_name: commit
+login_login_xpath: //input[@name='commit']
 #Menu
+menu_infeasibility: //nav[@class="medium-nav-list main-nav"]//a[@href="/infeasibilities"]
 menu_collapsed: //div[@class="medium-up-nav"]
 menu_login: //div[@class="medium-up-nav main-nav-open"]//span[normalize-space(text())="Login"]/parent::a[1]
 menu_logout: //div[@class="medium-up-nav main-nav-open"]//span[normalize-space(text())="Logout"]/parent::a[1]
