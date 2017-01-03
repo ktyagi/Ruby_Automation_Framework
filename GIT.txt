@@ -113,3 +113,39 @@ where you have to substitute origin with the name of the remote repository and b
 
 Edit: Note the colon in front of the branch name, it is important.
 http://stackoverflow.com/questions/10317304/how-do-i-delete-a-branch-from-github
+
+=====================================================================================
+Change directry from GIT Bash
+
+Kuldeep.Kumar@nzx-lt-085 MINGW64 ~
+$ cd /c
+
+Kuldeep.Kumar@nzx-lt-085 MINGW64 /c
+$ pwd
+/c
+
+Kuldeep.Kumar@nzx-lt-085 MINGW64 /c
+$ ls
+'$Recycle.Bin'/                             'System Volume Information'/
+DevKit/                                     Users/
+DevKit-mingw64-64-4.7.2-20130224-1432-sfx/  WIts_Automation_Framework/
+'Documents and Settings'@                   WatirMelonCucumber/
+Framework/                                  Windows/
+HashiCorp/                                  Workspace/
+Intel/                                      apache-jmeter-3.0/
+MININT/                                     data_driven_framework/
+MSOCache/                                   gradle-2.14.1/
+PerfLogs/                                   hiberfil.sys
+Prashant/                                   ords/
+'Program Files'/                            page-object_framework/
+'Program Files (x86)'/                      pagefile.sys
+ProgramData/                                selenium-cucumber-ruby/
+Recovery/                                   uitesting_blog/
+Ruby23-x64/
+
+Kuldeep.Kumar@nzx-lt-085 MINGW64 /c
+$ cd WIts_Automation_Framework
+
+Kuldeep.Kumar@nzx-lt-085 MINGW64 /c/WIts_Automation_Framework (23)
+$
+

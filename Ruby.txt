@@ -1,7 +1,7 @@
 First Install Bundler
 
 
-C:\Users\Kuldeep.K
+C:\Users\Kuldeep.Kumar>gem install bundler
 Successfully installed bundler-1.13.6
 Parsing documentation for bundler-1.13.6
 Installing ri documentation for bundler-1.13.6
