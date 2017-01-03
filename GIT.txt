@@ -1,3 +1,6 @@
+GIT Synching
+https://www.atlassian.com/git/tutorials/syncing
+===============================================================================
 Git - deleted some files locally, how do I get them from a remote repository
 
 Since git is a distributed VCS, your local repository contains all of the information. No downloading is necessary; you just need to extract the content you want from the repo at your fingertips.

@@ -93,3 +93,17 @@ Release 3.0
 IEDriverServer_Win32_3.0.0.zip
 
 IE Version=11.0.9600.18537
+-------------------------------------------------------------------------
+*** WARNING: You must use ANSICON 1.31 or higher
+
+http://stackoverflow.com/questions/4746647/cucumber-not-showing-coloured-output-in-windows
+
+You need to
+
+Download Ansicon from https://github.com/adoxa/ansicon/downloads and unzip it into a directory
+with no spaces
+Open a command prompt and cd to the folder where you unzipped it
+Now, cd into either x86 or x64 (depending on your machine’s processor) and install it globally on
+your machine (For example, D:\Cucumber\ansi160\x64)
+Type ansicon.exe –i OR ansicon -i and press Enter
+Any program that prints ANSI colors will now display properly on your machine
