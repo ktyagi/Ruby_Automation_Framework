@@ -1,22 +1,22 @@
 class LoginPage
-  # puts "in log"
-  # include DataHelper
-  # element(:login_username) {|b1| b1.text_field(id: OR['login_username_id'])}
-  # element(:login_password) {|b| b.text_field(id: OR['login_password_id'])}
-  # element(:login_login) {|b| b.button(name: OR['login_login_name'])} # element(:login_login) {|b| b.button(value: OR['login_login_value'])}
-  #
-  # # element(:login_username) {|b1| b1.find_element(id: OR['login_username_id'])}
-  # # element(:login_password) {|b| b.find_element(id: OR['login_password_id'])}
-  # # element(:login_login) {|b| b.find_element(name: OR['login_login_name'])}
-  #
-  # def login(username="abc@xyz.com",passwd="Test@123")
-  #   login_username.set username
-  #   login_password.set passwd
-  #   # login_username.send_keys username  # Does not clear field before writing
-  #   # login_password.send_keys passwd
-  #   login_login.click
-  #
-  # end
+  include PageObject
+
+  # text_field(:login_username, :id => OR['login_username_id'])
+  text_field(:login_username, :xpath => OR['login_username'])
+  text_field(:login_password, :id => OR['login_password_id'])
+  button(:login_login, :name => OR['login_login_name'])
+  # text_field(:login_login, :value => OR['login_login_value'])
+  # text_field(:login_login, :xpath => OR['login_login_xpath'])
+
+
+
+  def login(username,passwd)
+    # puts "UserNAme #{username}."
+    self.login_username_element.when_present
+    self.login_username= username
+    self.login_password= passwd
+    self.login_login
+  end
   #
   # def login_yml(options={})
   #   # options = options.with_indifferent_access
@@ -25,6 +25,13 @@ class LoginPage
   #   password.set data_yml_hash['password']
   #   signin_button.click
   # end
+
+  def get_search_filter_elements
+    element_methods = self.class.instance_methods(false).find_all{ |m| m =~ /_element$/ }
+    elements = element_methods.collect{ |m| self.send(m) }
+  end
+
+  # elements(:inputele, :input)
 
 
 end

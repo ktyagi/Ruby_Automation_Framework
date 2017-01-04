@@ -26,7 +26,7 @@ module DataHelper
   private
 
   def yml_file
-    ENV['DATA_YML_FILE']? ENV['DATA_YML_FILE'] : 'default.yml'
+    ENV['DATA_YML_FILE']? ENV['DATA_YML_FILE'] : 'data.yml'
   end
 
   def excel_file
