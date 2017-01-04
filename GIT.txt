@@ -22,36 +22,18 @@ but if it's n commits ago, use HEAD~n, or simply fire up gitk, find the SHA1 of 
 
 If you have deleted multiple files locally but not committed, you can force checkout
 $ git checkout -f HEAD
-
 ===================================================================================
-Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
-$ ls
-Data.csv  Data1.csv  WITS_Jmeter.jmx
+Force Checkout or Navigating to branch
 
-Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
-$ git add Data.csv WITS_Jmeter.jmx
-warning: LF will be replaced by CRLF in test/performance/WITS_Jmeter.jmx.
-The file will have its original line endings in your working directory.
+git checkout -f <branch name>
+===================================================================================
+Remove directory or file from remote repository Github
 
-Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
-$ git pull
-Enter passphrase for key '/c/Users/Kuldeep.Kumar/.ssh/id_rsa':
-remote: Counting objects: 188, done.
-remote: Compressing objects: 100% (177/177), done.
-remote: Total 188 (delta 86), reused 0 (delta 0), pack-reused 0
-Receiving objects: 100% (188/188), 71.75 KiB | 64.00 KiB/s, done.
-Resolving deltas: 100% (86/86), done.
-From github.com:NZX/pep-raillery
-   098326d..8d63369  develop    -> origin/develop
- * [new branch]      feature/improving-no-data-handling -> origin/feature/improving-no-data-handling
-   5e26c65..ba709b8  feature/spa-cons -> origin/feature/spa-cons
- * [new branch]      fix/queries-dashboard-to-ords -> origin/fix/queries-dashboard-to-ords
-Updating 098326d..8d63369
-error: Your local changes to the following files would be overwritten by merge:
-        Gemfile
-Please commit your changes or stash them before you can merge.
-Aborting
-
+http://stackoverflow.com/questions/7927230/remove-directory-from-remote-repository-after-adding-them-to-gitignore
+git rm -r --cached some-directory
+git commit -m 'Remove the now ignored directory "some-directory"'
+git push origin master
+==========================================================================================
 $ git diff ../../Gemfile
 diff --git a/Gemfile b/Gemfile
 index 90feaa8..3e4d957 100644
@@ -67,45 +49,7 @@ index 90feaa8..3e4d957 100644
 
 Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
 $ git checkout -- ../../Gemfile
-Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
-$ git pull
-Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
-$ git status
-warning: LF will be replaced by CRLF in test/performance/WITS_Jmeter.jmx.
-The file will have its original line endings in your working directory.
-On branch develop
-Your branch is up-to-date with 'origin/develop'.
-Changes to be committed:
-  (use "git reset HEAD <file>..." to unstage)
 
-        new file:   Data.csv
-        modified:   WITS_Jmeter.jmx
-
-Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
-$ git commit -m "Updating performance test script"
-[develop warning: LF will be replaced by CRLF in test/performance/WITS_Jmeter.jmx.
-The file will have its original line endings in your working directory.
-0d343cd] Updating performance test script
-warning: LF will be replaced by CRLF in test/performance/WITS_Jmeter.jmx.
-The file will have its original line endings in your working directory.
- 2 files changed, 9012 insertions(+), 12 deletions(-)
- create mode 100644 test/performance/Data.csv
-
-Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
-$ git push origin develop
-Enter passphrase for key '/c/Users/Kuldeep.Kumar/.ssh/id_rsa':
-Counting objects: 6, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (6/6), 20.19 KiB | 0 bytes/s, done.
-Total 6 (delta 2), reused 0 (delta 0)
-remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
-To git@github.com:NZX/pep-raillery.git
-   8d63369..0d343cd  develop -> develop
-
-Kuldeep.Kumar@nzx-pc-043 MINGW64 /c/pep-raillery/test/performance (develop)
-$ ls
-Data.csv  Data1.csv  WITS_Jmeter.jmx
 ====================================================================================
 # show differences between index and working tree
 # that is, changes you haven't staged to commit
