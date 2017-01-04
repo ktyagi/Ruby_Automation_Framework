@@ -1,3 +1,0 @@
-#default: --no-source --color BROWSER=firefox --format pretty  --format html --out results.html --format json --out reports.json
-default: --format PrettyFace::Formatter::Html --out index.html DATA_YML_FILE=data.yml  BROWSER=firefox
-scenario: --tags @login,@Logout

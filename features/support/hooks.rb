@@ -1,7 +1,7 @@
-Before('@Login') do
-    puts "ENV['BROWSER'] #{ENV['BROWSER']}"
+Before do
     ENV['BROWSER'] = "chrome" if ENV['BROWSER'].nil?
     if(ENV['BROWSER']=='chrome')
+      puts "ENV['BROWSER'] #{ENV['BROWSER']}"
    ##Chrome
    driverpathC = File.join(File.absolute_path('../..', File.dirname(__FILE__)),"browsers","chromedriver.exe")
    ##------------------------------------------------------------------
@@ -11,23 +11,25 @@ Before('@Login') do
     # @browser = Watir::Browser.new :chrome
    #------------------------------------------------------------------
     elsif(ENV['BROWSER']=='firefox')
+      puts "ENV['BROWSER'] #{ENV['BROWSER']}"
    ##FireFox
    driverpathF = File.join(File.absolute_path('../..', File.dirname(__FILE__)),"browsers","geckodriver.exe")
-  ##------------------------------------------------------------------
    Selenium::WebDriver::Firefox::Binary.path="C:/Users/Kuldeep.Kumar/AppData/Local/Mozilla Firefox/firefox.exe"
+  ##------------------------------------------------------------------
    @browser=Selenium::WebDriver.for :firefox, driver_path: driverpathF
    # ##WAtir
    # Selenium::WebDriver.for :firefox, driver_path: driverpathF
    # @browser = Watir::Browser.new :firefox
    ##--------------------------------------------------
     elsif(ENV['BROWSER']=='ie')
+      puts "ENV['BROWSER'] #{ENV['BROWSER']}"
    ##IE
    driverpathI = File.join(File.absolute_path('../..', File.dirname(__FILE__)),"browsers","IEDriverServer.exe")
    ##------------------------------------------------------------------
    @browser = Selenium::WebDriver.for :ie, driver_path: driverpathI
    ##Watir
-   # Selenium::WebDriver.for :chrome , driver_path: driverpathI
-   # @browser = Watir::Browser.new :chrome
+   # Selenium::WebDriver.for :ie , driver_path: driverpathI
+   # @browser = Watir::Browser.new :ie
    #------------------------------------------------------------------
     end
 end
@@ -75,7 +77,7 @@ end
 #
 # end
 
-  After('@Logout') do
+  After do
       # @browser.cookies.clear
       @browser.quit
   end

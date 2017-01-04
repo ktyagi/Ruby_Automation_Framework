@@ -5,6 +5,7 @@ dashboard_autoplay_css: .fa.fa-pause
 
 dashboard_login: //span[normalize-space(text())="Login"]/parent::a[@tabindex=0]
 dashboard_signup:  //a[@href='/public_users/sign_up' and @class='button']
+dashboard_sigin_message: //div[@id='toast-container']//div[normalize-space(text())="Signed in successfully."]
 #Login Screen
 login_username_id: public_user_email
 login_username: //input[@id='public_user_email']

@@ -1,4 +1,4 @@
-   class PricesPage
+  class PricesPage
   # #   puts "in prcies"
   # # element(:prices_gridpoints) {|b1| b1.text_field(xpath: OR['prices_gridpoints'])}
   # # element(:prices_selectgridpoint) {|b1| b1.link(xpath: OR['prices_selectgridpoint'])}
@@ -16,4 +16,6 @@
   # #
   # # element(:reset) {|b1| b1.link(xpath: OR['reset_xpath'])}
   # # # element(:refreshresult) {|b1| b1.button(xpath: OR['refreshresult_xpath'])}
-   end
+
+  end
+

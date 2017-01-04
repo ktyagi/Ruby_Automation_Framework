@@ -4,14 +4,14 @@ Feature: Login and Logout
     When User open WITS website
     And User login with username "kuldeep1@mailinator.com" and password "Abcde@123"
 
-  @Login
-  Scenario: Verify Login
+  @VerifyLogin
+  Scenario: VerifyLogin
     Then User should be logged-in successfully
 #    Given User is logged-in
 #    When User clicks on logout link
 #    Then User should be logged-out successfully
 
-  @Logout
+  @VerifyLogout
   Scenario: VerifyLogout
     Given User is logged-in
     When User clicks on logout link

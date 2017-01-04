@@ -1,5 +1,12 @@
+Tutorials
+https://www.atlassian.com/git/tutorials/what-is-version-control
+==============================================================================
 GIT Synching
 https://www.atlassian.com/git/tutorials/syncing
+===============================================================================
+GIT flow with basic commands
+http://stackoverflow.com/questions/3689838/difference-between-head-working-tree-index-in-git
+http://stackoverflow.com/questions/3293607/difference-between-git-head-and-the-current-project-state
 ===============================================================================
 Git - deleted some files locally, how do I get them from a remote repository
 

@@ -16,6 +16,8 @@ on_page(DashBoardPage).dashboard_login
 end
 
 Then(/^User should be logged-in successfully$/) do
+  # on_page(DashBoardPage).dashboard_sigin_message_element.when_present(20)
+
   # on_page(MenuBar).menu_infeasibility?
   on_page(MenuBar).menu_infeasibility_element.when_present(10)
 
@@ -33,10 +35,11 @@ end
 # =end
 
 Given (/^User is logged-in$/) do
+  on_page(MenuBar).menu_infeasibility_element.when_present(10)
   if on(MenuBar).menu_logout_element.exists?
   elsif on(MenuBar).menu_logout_element.exists? == false
     on(MenuBar).menu_slider_element.click
-    on(MenuBar).menu_logout_element.when_present
+    on(MenuBar).menu_logout_element.when_present(10)
   end
 end
 
