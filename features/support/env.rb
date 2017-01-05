@@ -1,9 +1,13 @@
-# require 'watir'
+require 'watir'
 require 'require_all'
 require 'page-object'
+require 'selenium-webdriver'
+#require 'pretty_face'
+require 'cucumber'
 
 
-OR = YAML.load_file './lib/config/object_repository.yml'
+
+OR = YAML.load_file './config/object_repository.yml'
 require './lib/page_helper'
 require './lib/data_helper'
 
