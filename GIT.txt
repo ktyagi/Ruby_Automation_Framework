@@ -1,8 +1,5 @@
 Tutorials
 https://www.atlassian.com/git/tutorials/learn-git-with-bitbucket-cloud
-==============================================================================
-GIT Synching
-https://www.atlassian.com/git/tutorials/syncing
 ===============================================================================
 GIT flow with basic commands
 http://stackoverflow.com/questions/3689838/difference-between-head-working-tree-index-in-git
