@@ -33,6 +33,13 @@ Note: The -d option is an alias for --delete, which only deletes the branch if i
 
 Delete Remote Branch
 $ git push origin --delete <branch_name>
+====================================================================================
+$ git push origin :branch-name
+where you have to substitute origin with the name of the remote repository and branch-name with the name of the branch you want to delete at github.
+
+Edit: Note the colon in front of the branch name, it is important.
+http://stackoverflow.com/questions/10317304/how-do-i-delete-a-branch-from-github
+
 =====================================================================================
 Remove directory or file from remote repository Github
 
@@ -41,6 +48,14 @@ git rm -r --cached some-directory
 git commit -m 'Remove the now ignored directory "some-directory"'
 git push origin master
 ==========================================================================================
+Add a remote branch which is copy of master
+git push origin master:new_feature_name
+
+========================================================================================
+How to push a new local branch to a remote Git repository
+git push -u origin <branch>
+
+========================================================================================
 $ git diff ../../Gemfile
 diff --git a/Gemfile b/Gemfile
 index 90feaa8..3e4d957 100644
@@ -67,15 +82,6 @@ git diff --cached [filename]
 # show differences between current commit and working tree
 git diff HEAD [filename]
 
-
-====================================================================================
-$ git push origin :branch-name
-where you have to substitute origin with the name of the remote repository and branch-name with the name of the branch you want to delete at github.
-
-Edit: Note the colon in front of the branch name, it is important.
-http://stackoverflow.com/questions/10317304/how-do-i-delete-a-branch-from-github
-
-=====================================================================================
 Change directry from GIT Bash
 
 Kuldeep.Kumar@nzx-lt-085 MINGW64 ~
