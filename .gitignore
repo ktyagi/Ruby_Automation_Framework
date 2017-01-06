@@ -8,5 +8,5 @@ stylesheets/
 support/
 features_report.html
 *.xml
-
+!features/support/
 
