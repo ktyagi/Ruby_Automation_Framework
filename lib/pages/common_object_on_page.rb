@@ -1,8 +1,6 @@
-class CommonObjectOnPage
-  # puts "in com"
-  # element(:refreshresult) {|b1| b1.button(xpath: OR['refreshresult'])}
-  #
-
+class ComObj
+include PageObject
+  button(:refreshresult, :name => OR['refreshresult'])
 
 
 
