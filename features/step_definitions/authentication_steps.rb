@@ -1,9 +1,9 @@
-include PageObject::PageFactory
-When(/^User open WITS website$/) do
-  visit DashBoardPage
-end
+# include PageObject::PageFactory
+# When(/^User open WITS website$/) do
+#   visit DashBoardPage
+# end
 
-And(/^User login with username "([^"]*)" and password "([^"]*)"$/) do |username, password|
+When(/^User login with username "([^"]*)" and password "([^"]*)"$/) do |username, password|
 on_page(DashBoardPage).dashboard_autoplay
 # sleep (20)
 on_page(DashBoardPage).dashboard_login
@@ -34,7 +34,7 @@ end
 # end
 # =end
 
-Given (/^User is logged-in$/) do
+Given (/^Verify user is logged-in$/) do
   on_page(MenuBar).menu_infeasibility_element.when_present(10)
   if on(MenuBar).menu_logout_element.exists?
   elsif on(MenuBar).menu_logout_element.exists? == false
@@ -59,7 +59,7 @@ When(/^User clicks on logout link$/) do
 end
 
 Then(/^User should be logged-out successfully$/) do
-  on(DashBoardPage).dashboard_login_element.when_present
+  on(DashBoardPage).dashboard_login_element.when_present(10)
 end
 
 # # Then(/^I contact customer service with order reference "([^"]*)" and message "([^"]*)"$/) do |order_ref, message|
