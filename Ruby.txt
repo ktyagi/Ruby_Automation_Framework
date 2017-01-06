@@ -1,6 +1,5 @@
 First Install Bundler
 
-
 C:\Users\Kuldeep.Kumar>gem install bundler
 Successfully installed bundler-1.13.6
 Parsing documentation for bundler-1.13.6
@@ -10,26 +9,15 @@ Done installing documentation for bundler after 17 seconds
 
 C:\Users\Kuldeep.Kumar>
 
-
-Now run 
-
-D:\Wits_Automation_Framework>bundle install
-
+D:\Wits_Automation_Framework>bundle install or Tools->Bundler->Install
 to install all gems specified in gem file
 
-Can run
-
-
 D:\WIts_Automation_Framework>bundle update
-
 to get the latest version of gems specified in gem file
 
-
 D:\WIts_Automation_Framework>gem uninstall cucumber
-
 You have requested to uninstall the gem:
         cucumber-2.0.0
-
 data_magic-1.0 depends on cucumber (>= 1.2.0, development)
 gherkin-2.12.2 depends on cucumber (>= 1.3.8, development)
 page-object-2.0.0 depends on cucumber (>= 2.0.0, development)
@@ -43,10 +31,6 @@ Remove executables:
 in addition to the gem? [Yn]  y
 Removing cucumber
 Successfully uninstalled cucumber-2.0.0
-
-D:\WIts_Automation_Framework>bundle install
-
-
 
 rubyinstaller-2.3.3-x64
 
@@ -64,7 +48,22 @@ c:\DevKit-mingw64-64-4.7.2-20130224-1432-sfx>ruby dk.rb install
 [INFO] Installing 'C:/Ruby23-x64/lib/ruby/site_ruby/devkit.rb'
 
 c:\DevKit-mingw64-64-4.7.2-20130224-1432-sfx>
+------------------------------------------------------------------------
+D:\WIts_Automation_Framework>gem env
+RubyGems Environment:
 
+D:\WIts_Automation_Framework>gem list
+
+*** LOCAL GEMS ***
+
+D:\WIts_Automation_Framework>gem install gherkin -v 2.12.1
+
+D:\WIts_Automation_Framework>irb
+irb(main):001:0> require 'watir'
+=> true
+irb(main):002:0> require 'gherkin'
+=> true
+irb(main):003:0>quit
 
 ------------------------------------------------------------------------
 #Browser
