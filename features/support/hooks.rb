@@ -1,3 +1,4 @@
+=begin
 Before do |scenario|
   ENV['BROWSER'] = "chrome" if ENV['BROWSER'].nil?
   if(ENV['BROWSER']=='chrome')
@@ -33,6 +34,7 @@ Before do |scenario|
     #------------------------------------------------------------------
   end
   @browser.get "https://uat.electricityinfo.co.nz/"
+
 end
 
 Before('@Prices') do
@@ -41,6 +43,7 @@ Before('@Prices') do
   puts "Global"
   $dunit = true
 end
+=end
 
 
 =begin

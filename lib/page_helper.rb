@@ -1,3 +1,4 @@
+=begin
 module PageHelper
 
 
@@ -32,3 +33,19 @@ module PageHelper
   end
 
 end
+
+
+module HasBrowser
+  # @@browser = Selenium::WebDriver.for :firefox
+  driverpathF = File.join(File.absolute_path('..', File.dirname(__FILE__)),"browsers","geckodriver.exe")
+  Selenium::WebDriver::Firefox::Binary.path="C:/Users/Kuldeep.Kumar/AppData/Local/Mozilla Firefox/firefox.exe"
+  ##------------------------------------------------------------------
+  @@browser=Selenium::WebDriver.for :firefox, driver_path: driverpathF
+  @@browser.get "https://uat.electricityinfo.co.nz/"
+  at_exit { @@browser.quit }
+  # def browser
+  #   @browser
+  # end
+end
+
+=end

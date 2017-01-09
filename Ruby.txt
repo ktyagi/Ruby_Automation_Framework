@@ -106,3 +106,6 @@ Now, cd into either x86 or x64 (depending on your machine’s processor) and ins
 your machine (For example, D:\Cucumber\ansi160\x64)
 Type ansicon.exe –i OR ansicon -i and press Enter
 Any program that prints ANSI colors will now display properly on your machine
+-----------------------------------------------------------------------------
+Metaprogramming Ruby: class_eval and instance_eval
+https://www.jimmycuadra.com/posts/metaprogramming-ruby-class-eval-and-instance-eval/

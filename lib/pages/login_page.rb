@@ -10,11 +10,11 @@ class LoginPage
 
 
 
-  def login(username,passwd)
+  def login
     # puts "UserNAme #{username}."
     self.login_username_element.when_present
-    self.login_username= username
-    self.login_password= passwd
+    self.login_username= DT['ENV']['Username']
+    self.login_password= DT['ENV']['Password']
     self.login_login
   end
   #

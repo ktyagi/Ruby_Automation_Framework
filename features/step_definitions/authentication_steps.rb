@@ -3,8 +3,9 @@
 #   visit DashBoardPage
 # end
 
-When(/^User login with username "([^"]*)" and password "([^"]*)"$/) do |username, password|
-on_page(DashBoardPage).dashboard_autoplay
+# When(/^User login with username "([^"]*)" and password "([^"]*)"$/) do |username, password|
+  When(/^User login with username and password$/) do
+  on_page(DashBoardPage).dashboard_autoplay
 # sleep (20)
 on_page(DashBoardPage).dashboard_login
   # on_page(LoginPage).get_search_filter_elements.each{ |e| puts e.class }
@@ -12,8 +13,9 @@ on_page(DashBoardPage).dashboard_login
   # on_page(LoginPage).get_search_filter_elements.each{ |e| puts e.inspect }
   # on_page(LoginPage).get_search_filter_elements.each{ |e| puts e.to_s }
   # on_page(LoginPage).inputele_elements.each{ |e| puts e.name }
-  on_page(LoginPage).login(username,password)
+  on_page(LoginPage).login
 end
+=begin
 
 Then(/^User should be logged-in successfully$/) do
   # on_page(DashBoardPage).dashboard_sigin_message_element.when_present(20)
@@ -27,6 +29,7 @@ Then(/^User should be logged-in successfully$/) do
   #     on(MenuBar).menu_slider.click
   # end
 end
+=end
 # =begin
 # And(/^I login using data from yml$/) do
 #   on(DashBoardPage).sign_in.when_present(10).click
@@ -34,7 +37,7 @@ end
 # end
 # =end
 
-Given (/^Verify user is logged-in$/) do
+Given (/^User is logged-in$/) do
   on_page(MenuBar).menu_infeasibility_element.when_present(10)
   if on(MenuBar).menu_logout_element.exists?
   elsif on(MenuBar).menu_logout_element.exists? == false

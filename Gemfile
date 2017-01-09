@@ -7,7 +7,7 @@ gem 'page-object', '~> 2.0'
 gem 'pretty_face'
 gem 'selenium-webdriver', '~> 3.0'
 # gem 'selenium-webdriver', '~> 2.53'
-
+gem "data_magic", ">0"
 
 
 
