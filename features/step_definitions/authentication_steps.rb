@@ -5,15 +5,12 @@
 
 # When(/^User login with username "([^"]*)" and password "([^"]*)"$/) do |username, password|
   When(/^User login with username and password$/) do
-  on_page(DashBoardPage).dashboard_autoplay
+
+  on_page(DashBoardPage).dashboard_autoplay_element.when_visible(20).click
 # sleep (20)
-on_page(DashBoardPage).dashboard_login
-  # on_page(LoginPage).get_search_filter_elements.each{ |e| puts e.class }
-  # on_page(LoginPage).get_search_filter_elements.each{ |e| puts e.name }
-  # on_page(LoginPage).get_search_filter_elements.each{ |e| puts e.inspect }
-  # on_page(LoginPage).get_search_filter_elements.each{ |e| puts e.to_s }
-  # on_page(LoginPage).inputele_elements.each{ |e| puts e.name }
+  on_page(DashBoardPage).dashboard_login
   on_page(LoginPage).login
+    # on_page(DashBoardPage).refresh
 end
 =begin
 
@@ -38,11 +35,12 @@ end
 # =end
 
 Given (/^User is logged-in$/) do
-  on_page(MenuBar).menu_infeasibility_element.when_present(10)
-  if on(MenuBar).menu_logout_element.exists?
-  elsif on(MenuBar).menu_logout_element.exists? == false
+  on_page(MenuBar).menu_infeasibility_element.when_visible(10)
+  # debugger
+  if on(MenuBar).menu_logout?
+  elsif on(MenuBar).menu_logout? == false
     on(MenuBar).menu_slider_element.click
-    on(MenuBar).menu_logout_element.when_present(10)
+    on(MenuBar).menu_logout_element.when_visible(20)
   end
 end
 

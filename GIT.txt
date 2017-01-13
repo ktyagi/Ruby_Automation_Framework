@@ -47,6 +47,10 @@ http://stackoverflow.com/questions/7927230/remove-directory-from-remote-reposito
 git rm -r --cached some-directory
 git commit -m 'Remove the now ignored directory "some-directory"'
 git push origin master
+========================================================================================
+How to remove file after git add from index area (Undo a git add)
+git reset filename.txt
+http://data.agaric.com/undo-git-add-remove-files-staged-git-commit
 ==========================================================================================
 Add a remote branch which is copy of master
 git push origin master:new_feature_name

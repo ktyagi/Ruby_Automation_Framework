@@ -1,9 +1,0 @@
-#default: --no-source --color BROWSER=firefox --format pretty  --format html --out results.html --format json --out reports.json
-#default:  DATA_YML_FILE=data.yml
-#default: --format PrettyFace::Formatter::Html --out index.html DATA_YML_FILE=data.yml  BROWSER=ie
-#scenario: --tags @login,@Logout
-default: --profile html_report --profile bvt
-#html_report: --format progress --format html --out=features_report.html BROWSER=firefox
-html_report: --format PrettyFace::Formatter::Html --out index.html DATA_YML_FILE=data.yml  BROWSER=firefox
-bvt: --tags @LoginLogout
-

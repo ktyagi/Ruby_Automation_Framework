@@ -6,17 +6,22 @@ require 'pretty_face'
 require 'cucumber'
 require 'page-object/page_factory'
 require 'data_magic'
-
+require 'byebug'
 OR = YAML.load_file './config/object_repository.yml'
-DT = YAML.load_file './config/data/data.yml'
-require './lib/page_helper'
-require './lib/data_helper'
-
+DT = YAML.load_file './config/data.yml'
+# require './lib/page_helper'
+# require './lib/data_helper'
+require './lib/common_function'
+# require 'rspec/collection_matchers'
+require 'rspec/expectations'
+require 'rspec'
 require_all './lib/pages'
 
+REFRESH_RESULT_TIMEOUT=60
+
 #World DataHelper
-# World Keywords
 # World PageHelper
+World CommonFunc
 World(PageObject::PageFactory)
 
 # World HasBrowser
@@ -60,6 +65,6 @@ Before do
   @browser = browser
 end
 
-at_exit do
-  browser.close
-end
+# at_exit do
+#   browser.close
+# end

@@ -92,7 +92,7 @@ Release 3.0
 IEDriverServer_Win32_3.0.0.zip
 
 IE Version=11.0.9600.18537
--------------------------------------------------------------------------
+--------------------------------------------------------------------------
 *** WARNING: You must use ANSICON 1.31 or higher
 
 http://stackoverflow.com/questions/4746647/cucumber-not-showing-coloured-output-in-windows
@@ -109,3 +109,28 @@ Any program that prints ANSI colors will now display properly on your machine
 -----------------------------------------------------------------------------
 Metaprogramming Ruby: class_eval and instance_eval
 https://www.jimmycuadra.com/posts/metaprogramming-ruby-class-eval-and-instance-eval/
+
+------------------------------------------------------------------------------
+byebug installation issue
+https://github.com/deivid-rodriguez/byebug/issues/119
+
+force devkit installation like below
+
+E:\>cd DevKit-mingw64-64-4.7.2-20130224-1432-sfx
+
+E:\DevKit-mingw64-64-4.7.2-20130224-1432-sfx>ruby dk.rb init --force
+[INFO] found RubyInstaller v2.3.3 at d:/Ruby23-x64
+
+Initialization complete! Please review and modify the auto-generated
+'config.yml' file to ensure it contains the root directories to all
+of the installed Rubies you want enhanced by the DevKit.
+
+E:\DevKit-mingw64-64-4.7.2-20130224-1432-sfx>ruby dk.rb install --force
+[WARN] Updating (with backup) existing gem override for 'd:/Ruby23-x64'
+[WARN] Updating (with backup) DevKit helper library for 'd:/Ruby23-x64'
+
+E:\DevKit-mingw64-64-4.7.2-20130224-1432-sfx>
+------------------------------------------------------------------------------
+BYEBUG cheatsheet
+
+https://fleeblewidget.co.uk/2014/05/byebug-cheatsheet/

@@ -3,14 +3,14 @@ Feature: Login and Logout
 
 #  Background: Enter login credentials
 #    When User login with username "kuldeep1@mailinator.com" and password "Abcde@123"
-
+  @Login
   Scenario: VerifyLogin.
     When User login with username and password
     Then User is logged-in
 #    When User clicks on logout link
 #    Then User should be logged-out successfully
 
-  @VerifyLogout
+  @Logout
   Scenario: VerifyLogout.
     Given User is logged-in
     When User clicks on logout link

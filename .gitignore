@@ -9,4 +9,5 @@ support/
 features_report.html
 *.xml
 !features/support/
-
+log/
+debug.log

@@ -8,6 +8,10 @@ gem 'pretty_face'
 gem 'selenium-webdriver', '~> 3.0'
 # gem 'selenium-webdriver', '~> 2.53'
 gem "data_magic", ">0"
+gem "rake"
+gem 'byebug', '~> 5.0'
+gem 'rspec'
+
 
 
 

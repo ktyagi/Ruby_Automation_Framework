@@ -3,6 +3,7 @@ class MenuBar
   div(:menu_slider, :xpath => OR['menu_slider'])
   link(:menu_logout, :xpath => OR['menu_logout'])
   link(:menu_infeasibility, :xpath => OR['menu_infeasibility'])
+ list_item(:menu_pricestoggle_expand, :xpath => OR['menu_pricestoggle_expand'])
  link(:menu_pricestoggle, :xpath => OR['menu_pricestoggle'])
  link(:menu_prices, :xpath => OR['menu_prices'])
   # element(:menu_collapsed) {|b1| b1.element(xpath: OR['menu_collapsed'])}
