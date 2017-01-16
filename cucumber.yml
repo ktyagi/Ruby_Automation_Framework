@@ -7,9 +7,6 @@ html_report: --format PrettyFace::Formatter::Html --out index.html DATA_YML_FILE
 bvt: --tags @Login,@Prices
 
 
-
-
-#
 ##https://robots.thoughtbot.com/five-ridiculously-awesome-cucumber-and-webrat
 #
 #default: >

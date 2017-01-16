@@ -53,14 +53,19 @@ prices_prs: //input[@id='run-types-a']
 prices_wds: //input[@id='run-types-w']
 prices_rtp: //input[@id='run-types-i']
 prices_rtpavg: //input[@id='run-types-5']
+prices_schedules: //switch-checkbox-item-list[@data-name='run_types']/div//span[1]
 #--- Prices Market Type
 prices_mtypeenergy: //input[@id='market-types-e']
 prices_mtypereserve: //input[@id='market-types-r']
+prices_mtypes: //switch-checkbox-item-list[@data-name='market_types']/div//span[1]
 #--- Prices Grid Points
 prices_gridpoints: //input[@placeholder="Select grid points"]
 prices_selectgridpoint: //a[normalize-space(text())='ABY0111']
 prices_deselectgridpoint: //span[normalize-space(text())='BEN2201']/a
 prices_msg_maxgridpoints: //span[text()='* Maximum limit of grid points exceeded']
+prices_select_gpg: //ul[@class="opt-group gpg no-bullet"]
+prices_select_opt_gp: //ul[@class="opt-group opt no-bullet"]
+prices_selected_gps: //div[@class='list-of-selected-options']/span
 #--- Prices date
 prices_fromdate: //input[@id='search_form_date_from']
 prices_fromtp: //select[@id='search_form_tp_from']

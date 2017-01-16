@@ -1,27 +1,17 @@
 refreshTimeout=REFRESH_RESULT_TIMEOUT
 And(/^Market Prices page is opened$/) do
   on_page(MenuBar).menu_infeasibility_element.when_visible(10)
-
-
   on_page(MenuBar).menu_pricestoggle
-
-  p on_page(MenuBar).menu_pricestoggle_expand?
+  expect(on_page(MenuBar).menu_pricestoggle_expand?).to be_truthy
   sleep 2
-  p on_page(MenuBar).menu_prices
-  debugger
-
-
+  on_page(MenuBar).menu_prices
   # p on_page(PricesPage).prices_msg_loading? #always exist
-
-
   wait_for_element(on_page(PricesPage).prices_final_element)
   expect(on_page(PricesPage).prices_final?).to be_truthy
   expect(on_page(PricesPage).prices_title?).to be_truthy
-
   # expect(on_page(PricesPage).prices_final?).not_to be_truthy
 
 =begin
-
   # p on_page(PricesPage).prices_final_element.when_present(60)  # when loading return selenium surrogate element
   # p on_page(PricesPage).prices_final_element.when_visible(60) # when loading return not visible in 60 seconds
     p on_page(PricesPage).prices_final? #false when overloading is not finished
@@ -38,31 +28,27 @@ And(/^Market Prices page is opened$/) do
 
   # on_page(PricesPage).prices_final_element.when_present(60).double_click
   on_page(PricesPage).prices_final_element.fire_event('click')
-
   # on_page(PricesPage).check_prices_final
   # on_page(PricesPage).prices_gridpoints="ABY0111"
   # on_page(PricesPage).prices_selectgridpoint
 
   on_page(ComObj).com_date
 
-  # on_page(PricesPage).prices_fromdate_element.clear
-  # on_page(PricesPage).prices_fromdate_element.send_keys '2016-05-15'
   on_page(PricesPage).prices_fromdate='2016-05-15'
   on_page(PricesPage).prices_fromdate_element.click
-
   on_page(PricesPage).prices_fromtp='TP 2 (00:30)'
-
   on_page(PricesPage).prices_todate='2016-05-16'
   on_page(PricesPage).prices_todate_element.click
   on_page(PricesPage).prices_totp="TP 4 (01:30)"
 
-
+  on_page(PricesPage).prices_selected_gp_elements.each do |span_text|
+    p span_text.text()
+  end
 
 end
 
 =begin
 Given(/^User is on prices page$/) do
-
   # on(PricesPage).prices_mtypereserve.when_present(120).click
   # on(PricesPage).prices_gridpoints.when_present(120).click
   # on(PricesPage).prices_selectgridpoint.when_present(120).click
@@ -73,13 +59,14 @@ Given(/^User is on prices page$/) do
 end
 =end
 
-=begin
 Given(/^Verify default search selection$/) do |table|
   # table is a Cucumber::MultilineArgument::DataTable
   data = table.hashes
   GP = []
   SC = []
   MT = []
+  TBP = []
+  TPF = []
 
   data.each do |row|
     row.each do |key, value|
@@ -89,6 +76,10 @@ Given(/^Verify default search selection$/) do |table|
         SC << value
       elsif key.eql? "Market_Type"
         MT << value
+      elsif key.eql? "TPB"
+        SC << value
+      elsif key.eql? "TPF"
+        MT << value
       end
     end
   end
@@ -97,8 +88,7 @@ Given(/^Verify default search selection$/) do |table|
   puts SC
   puts MT
 end
-=end
-
+# verifyExpAct(DT['PRICES']['Schedules'],OR['prices_schedules'])
 
 When(/^user click on refresh results button$/) do
   # debugger
@@ -109,7 +99,6 @@ When(/^user click on refresh results button$/) do
   p on_page(ComObj).com_reset_element.enabled?
   wait_for_property(on_page(ComObj).com_refreshresult_element,'disabled',nil)
   on_page(ComObj).com_reset
-
 end
 
 # Then(/^user see default search results$/) do
@@ -117,7 +106,9 @@ end
 # end
 
 
-
+# def verifyExpAct(ExSchedules,AcSchedules)
+#   ES= ExSchedules.split(",")
+# end
 
 
 

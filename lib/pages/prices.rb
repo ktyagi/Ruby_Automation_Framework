@@ -1,6 +1,6 @@
   class PricesPage
     include PageObject
-     h1(:prices_title, :xpath => OR['prices_title'])
+    h1(:prices_title, :xpath => OR['prices_title'])
     checkbox(:prices_final , xpath: OR['prices_final'] )
     checkbox(:prices_interim , xpath: OR['prices_interim'] )
     checkbox(:prices_provisional , xpath: OR['prices_provisional'] )
@@ -23,9 +23,14 @@
     select_list(:prices_totp , xpath: OR['prices_totp'] )
     span(:prices_msg_loading , xpath: OR['prices_msg_loading'] )
 
+    unordered_list(:prices_select_gpg , xpath: OR['prices_select_gpg'] )
+    unordered_list(:prices_select_opt , xpath: OR['prices_select_opt'] )
+
+    spans(:prices_selected_gp , xpath: OR['prices_selected_gps'] )
+    spans(:prices_selected_gp , xpath: OR['prices_selected_gps'] )
+
 
 =begin
-
   element(:prices_gridpoints) {|b1| b1.text_field(xpath: OR['prices_gridpoints'])}
   element(:prices_selectgridpoint) {|b1| b1.link(xpath: OR['prices_selectgridpoint'])}
   element(:prices_deselectgridpoint) {|b1| b1.link(xpath: OR['prices_deselectgridpoint'])}
@@ -36,7 +41,6 @@
   element(:prices_todate) {|b1| b1.text_field(xpath: OR['prices_todate'])}
   element(:prices_totp) {|b1| b1.link(xpath: OR['prices_totp'])}
   element(:reset) {|b1| b1.link(xpath: OR['reset_xpath'])}
-
 =end
   # element(:refreshresult) {|b1| b1.button(xpath: OR['refreshresult_xpath'])}
   end
