@@ -49,3 +49,14 @@ module HasBrowser
 end
 
 =end
+=begin
+module Abc
+   def self.pr
+     puts "self"
+   end
+  def sh
+    puts show
+  end
+end
+p Abc.pr
+p Abc.sh=end

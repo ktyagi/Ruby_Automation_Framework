@@ -131,6 +131,34 @@ E:\DevKit-mingw64-64-4.7.2-20130224-1432-sfx>ruby dk.rb install --force
 
 E:\DevKit-mingw64-64-4.7.2-20130224-1432-sfx>
 ------------------------------------------------------------------------------
-BYEBUG cheatsheet
-
+BYEBUG Cheatsheet
 https://fleeblewidget.co.uk/2014/05/byebug-cheatsheet/
+-----------------------------------------------------------------------------
+Difference between a class and a module
+http://stackoverflow.com/questions/151505/difference-between-a-class-and-a-module
+-----------------------------------------------------------------------------
+Ruby Include , Exclude , Included , Excluded
+https://www.sitepoint.com/rubys-important-hook-methods/
+-----------------------------------------------------------------------------
+Ruby Singleton class and Methods
+http://www.devalot.com/articles/2008/09/ruby-singleton
+https://codequizzes.wordpress.com/2014/05/06/ways-to-define-singleton-methods-in-ruby/
+-----------------------------------------------------------------------------
+is_a? VS kind_of? VS instance_of?
+http://blog.58share.com/?p=315
+http://stackoverflow.com/questions/3893278/ruby-kind-of-vs-instance-of-vs-is-a
+------------------------------------------------------------------------------
+RUBY, RUBY QUICK REF
+http://reference.jumpingmonkey.org/programming_languages/ruby/
+http://www.zenspider.com/ruby/quickref.html
+------------------------------------------------------------------------------
+Three Golden Rules to Understand Self in Ruby
+https://hackhands.com/three-golden-rules-understand-self-ruby/
+https://www.jimmycuadra.com/posts/self-in-ruby/
+---------------------------------------------------------------------------
+Difference between @instance_variable and attr_accessor
+http://stackoverflow.com/questions/12924080/difference-between-instance-variable-and-attr-accessor
+------------------------------------------------------------------------------
+blocks as function arguments in Ruby
+http://www.rakeroutes.com/blog/anonymous-blocks-as-function-arguments-in-ruby/
+

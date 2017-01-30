@@ -6,19 +6,24 @@ And(/^Market Prices page is opened$/) do
   sleep 2
   on_page(MenuBar).menu_prices
   # p on_page(PricesPage).prices_msg_loading? #always exist
-  wait_for_element(on_page(PricesPage).prices_final_element)
-  expect(on_page(PricesPage).prices_final?).to be_truthy
+  # wait_for_element(on_page(PricesPage).prices_final_element)
+  # on_page(PricesPage).wait_for_ajax(50,"Page did not load within 50 seconds")  # Not working (waiting for 50 seconds)
+  on_page(PricesPage).wait_until(50, "prices_final object not found within 50 seconds") do
+    # @page.text.include? "Value returned from Ajax call"
+    on_page(PricesPage).prices_final?
+  end
+   expect(on_page(PricesPage).prices_final?).to be_truthy
   expect(on_page(PricesPage).prices_title?).to be_truthy
   # expect(on_page(PricesPage).prices_final?).not_to be_truthy
 
 =begin
   # p on_page(PricesPage).prices_final_element.when_present(60)  # when loading return selenium surrogate element
-  # p on_page(PricesPage).prices_final_element.when_visible(60) # when loading return not visible in 60 seconds
-    p on_page(PricesPage).prices_final? #false when overloading is not finished
-    p on_page(PricesPage).prices_final_element.enabled?        #true when overloading is finished
-    p on_page(PricesPage).prices_final_element.disabled?       #false when overloading is finished
-    p on_page(PricesPage).prices_final_element.check_visible   #false when overloading is finished
-    p on_page(PricesPage).prices_final_element.visible?        #false when overloading is finished
+  # p on_page(PricesPage).prices_final_element.when_visible(60)  # when loading return not visible in 60 seconds
+    p on_page(PricesPage).prices_final?                          # false when overloading is not finished
+    p on_page(PricesPage).prices_final_element.enabled?          # true when overloading is finished
+    p on_page(PricesPage).prices_final_element.disabled?         # false when overloading is finished
+    p on_page(PricesPage).prices_final_element.check_visible     # false when overloading is finished
+    p on_page(PricesPage).prices_final_element.visible?          # false when overloading is finished
     # p on_page(PricesPage).prices_final_element.when_visible(60)
     # p on_page(PricesPage).prices_final_element.when_present(60)
     debugger
@@ -31,15 +36,13 @@ And(/^Market Prices page is opened$/) do
   # on_page(PricesPage).check_prices_final
   # on_page(PricesPage).prices_gridpoints="ABY0111"
   # on_page(PricesPage).prices_selectgridpoint
-
   on_page(ComObj).com_date
-
   on_page(PricesPage).prices_fromdate='2016-05-15'
   on_page(PricesPage).prices_fromdate_element.click
-  on_page(PricesPage).prices_fromtp='TP 2 (00:30)'
+  on_page(PricesPage).prices_fromtp='TP 1 (00:30)'
   on_page(PricesPage).prices_todate='2016-05-16'
   on_page(PricesPage).prices_todate_element.click
-  on_page(PricesPage).prices_totp="TP 4 (01:30)"
+  on_page(PricesPage).prices_totp="TP 48 (01:30)"
 
   on_page(PricesPage).prices_selected_gp_elements.each do |span_text|
     p span_text.text()
@@ -47,17 +50,6 @@ And(/^Market Prices page is opened$/) do
 
 end
 
-=begin
-Given(/^User is on prices page$/) do
-  # on(PricesPage).prices_mtypereserve.when_present(120).click
-  # on(PricesPage).prices_gridpoints.when_present(120).click
-  # on(PricesPage).prices_selectgridpoint.when_present(120).click
-  # on(PricesPage).prices_deselectgridpoint.when_present(120).click
-  # on(PricesPage).prices_mtypereserve.when_present(120).fire_event :click
-  # on(PricesPage).reset.when_present(120).fire_event :click
-  #   on(PricesPage).refreshresult.click
-end
-=end
 
 Given(/^Verify default search selection$/) do |table|
   # table is a Cucumber::MultilineArgument::DataTable
@@ -95,10 +87,11 @@ When(/^user click on refresh results button$/) do
   wait_for_element(on_page(ComObj).com_refreshresult_element,2)
   on_page(ComObj).com_refreshresult
   wait_for_element(on_page(ComObj).com_reset_element)
-  p on_page(ComObj).com_reset?
-  p on_page(ComObj).com_reset_element.enabled?
-  wait_for_property(on_page(ComObj).com_refreshresult_element,'disabled',nil)
+  # p on_page(ComObj).com_reset?
+  # p on_page(ComObj).com_reset_element.enabled?
+  # wait_for_property(on_page(ComObj).com_refreshresult_element,'disabled',nil)
   on_page(ComObj).com_reset
+  debugger
 end
 
 # Then(/^user see default search results$/) do

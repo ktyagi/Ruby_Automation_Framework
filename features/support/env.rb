@@ -13,7 +13,6 @@ DT = YAML.load_file './config/data.yml'
 # require './lib/data_helper'
 require './lib/common_function'
 # require 'rspec/collection_matchers'
-require 'rspec/expectations'
 require 'rspec'
 require_all './lib/pages'
 
@@ -23,7 +22,9 @@ REFRESH_RESULT_TIMEOUT=60
 # World PageHelper
 World CommonFunc
 World(PageObject::PageFactory)
-
+PageObject.default_page_wait=20
+PageObject.javascript_framework = :jquery
+# PageObject.javascript_framework = :angularjs
 # World HasBrowser
 
 ENV['BROWSER'] = "chrome" if ENV['BROWSER'].nil?
@@ -60,7 +61,6 @@ elsif(ENV['BROWSER']=='ie')
   #------------------------------------------------------------------
 end
 browser.get DT['ENV']['URL']
-
 Before do
   @browser = browser
 end

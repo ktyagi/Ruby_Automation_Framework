@@ -119,4 +119,20 @@ $ cd WIts_Automation_Framework
 
 Kuldeep.Kumar@nzx-lt-085 MINGW64 /c/WIts_Automation_Framework (23)
 $
+========================================================================
+Rename Git repository on Github and remote url
+http://stackoverflow.com/questions/5751585/how-do-i-rename-a-repository-on-github
+1) Change on github->repositoryname->setting->name
+2) change remote url as below
 
+Firstly, cd to your local git directory, and find out what remote name(s) refer to that URL
+
+$ git remote -v
+origin  git@github.com:someuser/someproject.git
+
+Then, set the new URL
+
+$ git remote set-url origin git@github.com:someuser/newprojectname.git
+3)change root folder name on local
+4) remove .idea folder from root folder
+5)Now open root folder(project)  in rubymine
