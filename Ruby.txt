@@ -1,4 +1,4 @@
-First Install Bundler
+﻿First Install Bundler
 
 C:\Users\Kuldeep.Kumar>gem install bundler
 Successfully installed bundler-1.13.6
@@ -48,7 +48,7 @@ c:\DevKit-mingw64-64-4.7.2-20130224-1432-sfx>ruby dk.rb install
 [INFO] Installing 'C:/Ruby23-x64/lib/ruby/site_ruby/devkit.rb'
 
 c:\DevKit-mingw64-64-4.7.2-20130224-1432-sfx>
-------------------------------------------------------------------------
+-------------------------------------------------------------------------
 D:\WIts_Automation_Framework>gem env
 RubyGems Environment:
 
