@@ -44,6 +44,7 @@ http://stackoverflow.com/questions/10317304/how-do-i-delete-a-branch-from-github
 Remove directory or file from remote repository Github
 
 http://stackoverflow.com/questions/7927230/remove-directory-from-remote-repository-after-adding-them-to-gitignore
+
 git rm -r --cached some-directory
 git commit -m 'Remove the now ignored directory "some-directory"'
 git push origin master
@@ -54,9 +55,18 @@ http://data.agaric.com/undo-git-add-remove-files-staged-git-commit
 ==========================================================================================
 Add a remote branch which is copy of master
 git push origin master:new_feature_name
+==========================================================================================
+Adding an existing project to GitHub using the command line
+
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+git add -A stages All
+git add . stages new and modified, without deleted
+git add -u stages modified and deleted, without new
 
 ========================================================================================
 How to push a new local branch to a remote Git repository
+
 git push -u origin <branch>
 
 ========================================================================================
