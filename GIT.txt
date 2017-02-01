@@ -23,7 +23,7 @@ $ git checkout -f HEAD
 Force Checkout or Navigating to branch
 
 git checkout -f <branch name>
-====================================================================================
+=====================================================================================
 Delete remote or local branch
 http://stackoverflow.com/questions/2003505/how-to-delete-a-git-branch-both-locally-and-remotely
 
