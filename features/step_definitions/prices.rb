@@ -13,7 +13,7 @@ And(/^Market Prices page is opened$/) do
     on_page(PricesPage).prices_final?
   end
    expect(on_page(PricesPage).prices_final?).to be_truthy
-  expect(on_page(PricesPage).prices_title?).to be_truthy
+   expect(on_page(PricesPage).prices_title?).to be_truthy
   # expect(on_page(PricesPage).prices_final?).not_to be_truthy
 
 =begin
@@ -91,12 +91,12 @@ When(/^user click on refresh results button$/) do
   # p on_page(ComObj).com_reset_element.enabled?
   # wait_for_property(on_page(ComObj).com_refreshresult_element,'disabled',nil)
   on_page(ComObj).com_reset
-  debugger
+  # debugger
 end
 
-# Then(/^user see default search results$/) do
-#
-# end
+Then(/^user see default search results$/) do
+
+end
 
 
 # def verifyExpAct(ExSchedules,AcSchedules)
