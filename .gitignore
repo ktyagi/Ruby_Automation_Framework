@@ -11,3 +11,4 @@ features_report.html
 !features/support/
 log/
 debug.log
+cucumber.json
